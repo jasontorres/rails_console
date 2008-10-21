@@ -1,7 +1,14 @@
 RailsConsole
 ============
 
+This is a web based ruby/rails console plugin, that you can use to get (nearly) same functionality you have on Rails' own ./script/console. 
+
 NOTE: USE AT YOUR OWN RISK! Don't use this on your production apps.
+
+
+How To Install
+
+./script/plugin install git://github.com/j4s0n/rails-console.git
 
 How To Use
 =======
@@ -17,15 +24,10 @@ Then Access your site
 http://foo.bar/console
 
 
-
-
-
 TODO:
 
 - white list the params[:command]
 - override allow_request? just to make sure only YOU can access that controller
-
-
 
 
 Jason Torres, released under the MIT license
