@@ -55,8 +55,7 @@ private
   ##
   # White list the command
   def white_list_command(command)
-
-    # do the white list here
+    # TODO: do the white list here
     command
   end
 
