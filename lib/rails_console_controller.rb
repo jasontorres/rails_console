@@ -1,4 +1,6 @@
 class RailsConsoleController < ActionController::Base
+
+  @@rails_console_binding = binding()
   
   before_filter :allowed_request?
   
@@ -17,7 +19,7 @@ class RailsConsoleController < ActionController::Base
     unless command
       @result = "Invalid Command."
     else
-      @result = eval(command) # => Magic happens here
+      @result = eval(command, @@rails_console_binding) # => Magic happens here
     end
     
     respond_to do |wants|
